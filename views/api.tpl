@@ -42,10 +42,10 @@
         <p>Click on one of the buttons on the right to display the information.</p>
     </div>
     <div class="buttons" style="display: flex; gap: 10px; align-items: center; margin-top: 20px;">
-        <a href="/price" onclick="changeContent('price')" style="background: transparent; border: 2px solid #8A2BE2; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">Price</a>
-        <a href="/docs" onclick="changeContent('docs')" style="background: transparent; border: 2px solid #8A2BE2; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">Documentation</a>
-        <a href="/faq" onclick="changeContent('faq')" style="background: transparent; border: 2px solid #8A2BE2; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">FAQ</a>
-        <a href="/compatible" onclick="changeContent('compatible')" style="background: transparent; border: 2px solid #8A2BE2; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">Compatible products</a>
+         <a href="/price" onclick="changeContent('price')" style="background: transparent; border: 2px solid #8A2BE2;font-family: 'Comic Sans MS', cursive, sans-serif;font-size:20px; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">Price</a>
+        <a href="/docs" onclick="changeContent('docs')" style="background: transparent; border: 2px solid #8A2BE2;font-family: 'Comic Sans MS', cursive, sans-serif;font-size:20px; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">Documentation</a>
+        <a href="/faq" onclick="changeContent('faq')" style="background: transparent; border: 2px solid #8A2BE2;font-family: 'Comic Sans MS', cursive, sans-serif;font-size:20px; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">FAQ</a>
+        <a href="/compatible" onclick="changeContent('compatible')" style="background: transparent; border: 2px solid #8A2BE2;font-family: 'Comic Sans MS', cursive, sans-serif;font-size:20px; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">Compatible products</a>
     </div>
 </div>
 
@@ -114,9 +114,6 @@
         }
         .content h2 {
             color: #8A2BE2;
-        }
-        .content p {
-            color: #666;
         }
         .text_section {
             font-size: 20px;
