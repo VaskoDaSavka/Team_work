@@ -1,4 +1,4 @@
-% rebase('layout.tpl', title='VPS Market', year=year)
+% rebase('layout.tpl', title='FAQ', year=year)
 
 <div class="jumbotron" style="
     max-width: 70%;  
@@ -37,9 +37,9 @@
 </div>
 
 <div class="block_info" style="display: flex; align-items: center; justify-content: space-between;">
-    <div class="content" id="contentArea" style="flex: 1;">
-        <h2>Select a section</h2>
-        <p>Click on one of the buttons on the right to display the information.</p>
+    <div class="content_docs" id="contentArea" style="flex: 1;">
+        <h1 class="select_text">Select a section</h2>
+        <p class="text_section">Click on one of the buttons on the right to display the information.</p>
     </div>
     <div class="buttons" style="display: flex; gap: 10px; align-items: center; margin-top: 20px;">
         <a href="/price" onclick="changeContent('price')" style="background: transparent; border: 2px solid #8A2BE2; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">Price</a>
@@ -70,3 +70,72 @@
         </div>
     </div>
 </body>
+
+<div class="faq-section" style="max-width: 70%; margin-top: 20px;">
+    <h1>What is VPN?</h1>
+    <p>With this technology, you can create a secure user connection to the network.</p>
+
+    <h1>Do you help set up a VPN?</h1>
+    <p>No, we do not offer this service. However, our technicians will answer questions and assist with the installation process.</p>
+
+    <h1>How to create a virtual server?</h1>
+    <p>To start a virtual server, you need to create an account in the control panel.</p>
+
+    <h1>What operating systems are available?</h1>
+    <p>You can choose ready-to-use images of Ubuntu, Debian, CentOS, Fedora, and others.</p>
+</div>
+<style>
+        .docs_block {
+            display: flex;
+            margin-top: 20px;
+        }
+        .sidebar {
+            width: 200px;
+            border-right: 2px solid #8A2BE2;
+            padding-right: 20px;
+        }
+        .sidebar a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+        .sidebar a.active {
+            color: #8A2BE2;
+            font-weight: bold;
+        }
+        .content {
+            flex-grow: 1;
+            padding-left: 20px;
+        }
+        .content h2 {
+            color: #8A2BE2;
+        }
+        .content p {
+            color: #666;
+        }
+        .text_section {
+            font-size: 20px;
+        }
+        .text {
+            font-size: 20px;
+        }
+        .select_text {
+            color: #8A2BE2;
+        }
+        p {
+            font-size: 20px;
+        }
+        .faq-section h1 {
+            color: #8A2BE2;
+            margin-top: 20px;
+        }
+
+        .faq-section p {
+            font-size: 18px;
+            color: #333;
+        }
+        p, h1, h2, h3 {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+</style>

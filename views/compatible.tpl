@@ -1,4 +1,4 @@
-% rebase('layout.tpl', title='VPS Market', year=year)
+% rebase('layout.tpl', title='FAQ', year=year)
 
 <div class="jumbotron" style="
     max-width: 70%;  
@@ -37,9 +37,9 @@
 </div>
 
 <div class="block_info" style="display: flex; align-items: center; justify-content: space-between;">
-    <div class="content" id="contentArea" style="flex: 1;">
-        <h2>Select a section</h2>
-        <p>Click on one of the buttons on the right to display the information.</p>
+    <div class="content_docs" id="contentArea" style="flex: 1;">
+        <h1 class="select_text">Select a section</h2>
+        <p class="text_section">Click on one of the buttons on the right to display the information.</p>
     </div>
     <div class="buttons" style="display: flex; gap: 10px; align-items: center; margin-top: 20px;">
         <a href="/price" onclick="changeContent('price')" style="background: transparent; border: 2px solid #8A2BE2; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">Price</a>
@@ -70,3 +70,93 @@
         </div>
     </div>
 </body>
+
+<h1>Choose the right solutions for your business challenges</h1>
+
+    <div class="container1" style="max-width: 70%; margin-top: 20px;">
+        <div class="card">
+            <img src="static/images/1.svg"></img>
+            <p><strong>Reserve and save data</strong></p>
+        </div>
+        <div class="card">
+            <img src="static/images/2.svg"></img>
+            <p><strong>Organise the network</strong></p>
+        </div>
+        <div class="card">
+            <img src="static/images/3.svg"></img>
+            <p><strong>Defend against threats</strong></p>
+        </div>
+    </div>
+<style>
+        .docs_block {
+            display: flex;
+            margin-top: 20px;
+        }
+        .sidebar {
+            width: 200px;
+            border-right: 2px solid #8A2BE2;
+            padding-right: 20px;
+        }
+        .sidebar a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+        .sidebar a.active {
+            color: #8A2BE2;
+            font-weight: bold;
+        }
+        .content {
+            flex-grow: 1;
+            padding-left: 20px;
+        }
+        .content h2 {
+            color: #8A2BE2;
+        }
+        .content p {
+            color: #666;
+        }
+        .text_section {
+            font-size: 20px;
+        }
+        .text {
+            font-size: 20px;
+        }
+        .select_text {
+            color: #8A2BE2;
+        }
+        p {
+            font-size: 20px;
+        }
+        .faq-section h1 {
+            color: #8A2BE2;
+            margin-top: 20px;
+        }
+
+        .faq-section p {
+            font-size: 18px;
+            color: #333;
+        }
+        .card {
+            margin-top: 20px;
+            background-color: white;
+            border: 3px solid #8A2BE2;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            cursor: pointer;
+            transform: translateY(-5px);
+        }
+        h1 {
+           color: #8A2BE2;
+        }
+        p, h1, h2, h3 {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+</style>

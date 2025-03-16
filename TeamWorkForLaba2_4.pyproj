@@ -50,6 +50,9 @@
     <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="static\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="static\images\1.svg" />
+    <Content Include="static\images\2.svg" />
+    <Content Include="static\images\3.svg" />
     <Content Include="static\images\Back.png" />
     <Content Include="static\images\BackForSite.png" />
     <Content Include="static\images\VPS.png" />
@@ -72,9 +75,23 @@
     <Content Include="static\scripts\respond.min.js" />
     <Content Include="static\scripts\_references.js" />
     <Content Include="views\about.tpl" />
+    <Content Include="views\api.tpl">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\blog.tpl">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\compatible.tpl" />
     <Content Include="views\contact.tpl" />
+    <Content Include="views\docs.tpl">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\faq.tpl" />
     <Content Include="views\index.tpl" />
     <Content Include="views\layout.tpl" />
+    <Content Include="views\price.tpl">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
