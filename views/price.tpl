@@ -43,7 +43,7 @@
     </div>
     </hr>
     <div class="buttons" style="display: flex; gap: 10px; align-items: center; margin-top: 20px;">
-         <a href="/price" onclick="changeContent('price')" style="background: transparent; border: 2px solid #8A2BE2;font-family: 'Comic Sans MS', cursive, sans-serif;font-size:20px; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">Price</a>
+        <a href="/price" onclick="changeContent('price')" style="background: transparent; border: 2px solid #8A2BE2;font-family: 'Comic Sans MS', cursive, sans-serif;font-size:20px; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">Price</a>
         <a href="/docs" onclick="changeContent('docs')" style="background: transparent; border: 2px solid #8A2BE2;font-family: 'Comic Sans MS', cursive, sans-serif;font-size:20px; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">Documentation</a>
         <a href="/faq" onclick="changeContent('faq')" style="background: transparent; border: 2px solid #8A2BE2;font-family: 'Comic Sans MS', cursive, sans-serif;font-size:20px; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">FAQ</a>
         <a href="/compatible" onclick="changeContent('compatible')" style="background: transparent; border: 2px solid #8A2BE2;font-family: 'Comic Sans MS', cursive, sans-serif;font-size:20px; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">Compatible products</a>   
@@ -59,68 +59,69 @@
 
 <div class="d-flex align-items-center">
         <h1 class="select_text">Configuration</h2>
+        <h2 class="price_month">Price in month</h2>
         <div class="grid-container">
             <div class="grid-item">
                 <p>1 vCPU</p>
                 <p>1 GB RAM</p>
                 <p>256 GB SSD</p>
-                <div class="price">1,22 RUB</div>
+                <div class="price">2500 RUB</div>
             </div>
 
             <div class="grid-item">
                 <p class="text_selection">1 vCPU</p>
                 <p>2 GB RAM</p>
                 <p>512 GB SSD</p>
-                <div class="price">1,55 RUB</div>
+                <div class="price">4500 RUB</div>
             </div>
                 
             <div class="grid-item">
                 <p>2 vCPU</p>
                 <p>4 GB RAM</p>
                 <p>1 TB HDD</p>
-                <div class="price">3,10 RUB</div>
+                <div class="price">8000 RUB</div>
             </div>
 
             <div class="grid-item">
                 <p>2 vCPU</p>
                 <p>8 GB RAM</p>
                 <p>2 TB HDD</p>
-                <div class="price">4,41 RUB</div>
+                <div class="price">13000 RUB</div>
             </div>
 
             <div class="grid-item">
                 <p>2 vCPU</p>
                 <p>16 GB RAM</p>
                 <p>2 TB HDD</p>
-                <div class="price">7,02 RUB</div>
+                <div class="price">16000 RUB</div>
             </div>
 
             <div class="grid-item">
                 <p>4 vCPU</p>
                 <p>8 GB RAM</p>
                 <p>2 TB HDD</p>
-                <div class="price">6,20 RUB</div>
+                <div class="price">12000 RUB</div>
             </div>
 
             <div class="grid-item">
                 <p>4 vCPU</p>
                 <p>32 GB RAM</p>
                 <p>4 TB HDD</p>
-                <div class="price">14,04 RUB</div>
+                <div class="price">32500 RUB</div>
             </div>
 
             <div class="grid-item">
                 <p>6 vCPU</p>
                 <p>32 GB RAM</p>
                 <p>4 TB HDD</p>
-                <div class="price">15,83 RUB</div>
+                <div class="price">39500 RUB</div>
             </div>
 
             <div class="grid-item">
                 <p>8 vCPU</p>
                 <p>32 GB RAM</p>
                 <p>4 TB HDD</p>
-                <div class="price">17,63 RUB</div>
+                <div class="price">46000 RUB</div>
             </div>
         </div>
         <form id="networkForm">
@@ -129,10 +130,10 @@
                 <div class="radio-group">
                     <h2>
                         <input type="radio" name="networkType" value="private" checked 
-                               onchange="updatePrice(this)">
+                               onchange="updatePrice(this)"/>
                         Private network
                         <span class="price">0,00 RUB</span>
-                    </h2>>
+                    </h2>
                 </div>
                 
                 <div class="radio-group">
@@ -140,7 +141,7 @@
                         <input type="radio" name="networkType" value="public" 
                                onchange="updatePrice(this)">
                         Public network
-                        <span class="price">1,07 RUB</span>
+                        <span class="price">3100,50 RUB</span>
                     </h2>
                 </div>
             </div>
@@ -269,6 +270,10 @@
             justify-content: center;
             position: relative;
             cursor: pointer;
+        }
+
+        input[type="radio"]:checked {
+            background-color: #8A2BE2; 
         }
 
         input[type="radio"]::before {
