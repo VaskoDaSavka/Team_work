@@ -30,11 +30,11 @@
         margin-bottom: 20px;">
         Reliable and high-performance VPS servers for your business. Flexibility, security, and maximum productivity.
     </p>
-    <p><a href="http://bottlepy.org/docs/dev/index.html" class="btn btn-primary btn-large" style="padding: 12px 20px; border-radius: 10px;">Learn more &raquo;</a></p>
 </div>
 
 <div class="container" style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px;">
     <div class="buttons" style="display: flex; gap: 10px;">
+        <button onclick="changeContent('price')" style="background: transparent; border: 2px solid #8A2BE2; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">Price</button>
         <button onclick="changeContent('about')" style="background: transparent; border: 2px solid #8A2BE2; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">About the product</button>
         <button onclick="changeContent('docs')" style="background: transparent; border: 2px solid #8A2BE2; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">Documentation</button>
         <button onclick="changeContent('compatible')" style="background: transparent; border: 2px solid #8A2BE2; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">Compatible products</button>
@@ -46,12 +46,20 @@
 <script>
     function changeContent(section) {
         let content = {
+            price: `<div class='row' style='display: flex; align-items: center; margin-top: 30px;'>
+                        <img src='static/images/price.png' class='img-fluid' alt='Purchase VPS' style='border-radius: 50%; background: white; padding: 10px; max-width: 150px; margin-right: 20px;'>
+                        <div style='font-family: Comic Sans MS, cursive, sans-serif; font-weight: bold;'>
+                            <h2>Price</h2>
+                            <p>In this item you can find out the prices for servers</p>
+                            <p><a href='/price' class='btn btn-default' target='_blank'>Learn more &raquo;</a></p>
+                        </div>
+                    </div>`,
             about: `<div class='row' style='display: flex; align-items: center; margin-top: 30px;'>
                         <img src='static/images/vps1.png' class='img-fluid' alt='Purchase VPS' style='border-radius: 50%; background: white; padding: 10px; max-width: 150px; margin-right: 20px;'>
                         <div style='font-family: Comic Sans MS, cursive, sans-serif; font-weight: bold;'>
-                            <h2>Getting started</h2>
+                            <h2>About</h2>
                             <p>Our VPS servers offer scalable solutions to suit your business needs, with a variety of configuration options and competitive pricing.</p>
-                            <p><a href='/contact' class='btn btn-default' target='_blank'>Learn more &raquo;</a></p>
+                            <p><a href='/about' class='btn btn-default' target='_blank'>Learn more &raquo;</a></p>
                         </div>
                     </div>`,
             docs: `<div class='row' style='display: flex; align-items: center; margin-top: 30px;'>
@@ -59,7 +67,7 @@
                         <div style='font-family: Comic Sans MS, cursive, sans-serif; font-weight: bold;'>
                             <h2>Documentation</h2>
                             <p>Find comprehensive guides and resources to help you get started with our VPS services and manage your servers efficiently.</p>
-                            <p><a class='btn btn-default' href='https://pypi.python.org/pypi'>Learn more &raquo;</a></p>
+                            <p><a class='btn btn-default' href='/docs'>Learn more &raquo;</a></p>
                         </div>
                     </div>`,
             compatible: `<div class='row' style='display: flex; align-items: center; margin-top: 30px;'>
@@ -67,15 +75,13 @@
                             <div style='font-family: Comic Sans MS, cursive, sans-serif; font-weight: bold;'>
                                 <h2>Compatibility</h2>
                                 <p>Our VPS servers are fully compatible with a wide range of software and technologies, ensuring smooth performance and ease of integration.</p>
-                                <p><a class='btn btn-default' href='http://azure.microsoft.com'>Learn more &raquo;</a></p>
+                                <p><a class='btn btn-default' href='/compatible'>Learn more &raquo;</a></p>
                             </div>
                         </div>`
         };
         document.getElementById("dynamicContent").innerHTML = content[section];
     }
 </script>
-<div id="dynamicContent"></div>
-
 <div class="faq-section" style="margin-top: 40px;">
  <div class="faq-section" style="margin-top: 40px; border: 3px solid #00BFFF; padding: 20px;">
     <h2 style="font-family: 'Comic Sans MS', cursive, sans-serif; text-align: center; color: black; border-bottom: 2px solid #00BFFF; padding-bottom: 10px;">
@@ -155,7 +161,6 @@
 
     </div>
 </div>
-
 <script>
     function toggleAnswer(button) {
         let answer = button.nextElementSibling;
