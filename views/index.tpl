@@ -36,15 +36,16 @@
     <p><a <a href="/about">About </a></p>
 </div>
 
-<div class="container" style="display: flex; align-items: center; justify-content: space-between;">
+<div class="block_info" style="display: flex; align-items: center; justify-content: space-between;">
     <div class="content" id="contentArea" style="flex: 1;">
-        <h2>Select a section</h2>
-        <p>Click on one of the buttons on the right to display the information.</p>
+        <h1 class="select_text">Select a section</h2>
+        <p class="text">Click on one of the buttons on the right to display the information.</p>
     </div>
     <div class="buttons" style="display: flex; gap: 10px; align-items: center; margin-top: 20px;">
-        <button onclick="changeContent('about')" style="background: transparent; border: 2px solid #8A2BE2; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">About the product</button>
-        <button onclick="changeContent('docs')" style="background: transparent; border: 2px solid #8A2BE2; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">Documentation</button>
-        <button onclick="changeContent('compatible')" style="background: transparent; border: 2px solid #8A2BE2; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">Compatible products</button>
+        <a href="/price" onclick="changeContent('price')" style="background: transparent; border: 2px solid #8A2BE2; font-family: 'Comic Sans MS', cursive, sans-serif;font-size:20px; padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">Price</a>
+        <a href="/docs" onclick="changeContent('docs')" style="background: transparent; border: 2px solid #8A2BE2;font-family: 'Comic Sans MS', cursive, sans-serif;font-size:20px;  padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">Documentation</a>
+        <a href="/faq" onclick="changeContent('faq')" style="background: transparent; border: 2px solid #8A2BE2;font-family: 'Comic Sans MS', cursive, sans-serif;font-size:20px;  padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">FAQ</a>
+        <a href="/compatible" onclick="changeContent('compatible')" style="background: transparent; border: 2px solid #8A2BE2;font-family: 'Comic Sans MS', cursive, sans-serif;font-size:20px;  padding: 10px 15px; border-radius: 5px; cursor: pointer; color: #8A2BE2;">Compatible products</a>
     </div>
 </div>
 
@@ -69,3 +70,21 @@
         </div>
     </div>
 </body>
+
+<style>
+        .text_section {
+            font-size: 20px;
+        }
+        .text {
+            font-size: 20px;
+        }
+        .select_text {
+            color: #8A2BE2;
+        }
+        h1,h2, p {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        p {
+            font-size: 20px;
+        }
+</style>
