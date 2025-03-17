@@ -55,6 +55,7 @@
     <Content Include="static\images\3.svg" />
     <Content Include="static\images\Back.png" />
     <Content Include="static\images\BackForSite.png" />
+    <Content Include="static\images\price.png" />
     <Content Include="static\images\VPS.png" />
     <Content Include="static\images\Vps1.png" />
     <Content Include="static\images\Vps2.png" />
@@ -86,7 +87,6 @@
     <Content Include="views\docs.tpl">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="views\faq.tpl" />
     <Content Include="views\index.tpl" />
     <Content Include="views\layout.tpl" />
     <Content Include="views\price.tpl">
