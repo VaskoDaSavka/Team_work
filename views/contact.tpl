@@ -1,33 +1,20 @@
 % rebase('layout.tpl', title=title, year=year)
 
-<h2>{{ title }}.</h2>
+<h2>{{ title }}</h2>
 <h3>{{ message }}</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="MKlkxwdlmxx">P:</abbr>
-    425.555.0100
-</address>
-<script src="/static/scripts/modernizr-2.6.2.js"></script>
-    <style>
-        body {
-            background-color: #b0e0e6; 
-        }
-        .navbar, footer {
-            background-color: #2c3e50 !important; 
-            color: white;
-            
-        }
-        footer {
-            padding: 10px 0;
-            text-align: center;
-            text-weight: bold
-            ;
-        }
-    </style>
-</head>
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<p>If you have any questions or need assistance, please contact our team:</p>
+
+<h4>Our Team</h4>
+<ul>
+    <li><strong>Nikita Gusev</strong> — Director  
+        <br>Email: <a href="mailto:nikita.gusev@gmail.com">nikita.gusev@gmail.com</a></li>
+    
+    <li><strong>Vasilisa Savinskaya</strong> — Support Center  
+        <br>Email: <a href="mailto:vasilisa.savinskaya@gmail.com">vasilisa.savinskaya@gmail.com</a></li>
+    
+    <li><strong>Artem Portov</strong> — Server Administrator  
+        <br>Email: <a href="mailto:artem.portov@gmail.com">artem.portov@gmail.com</a></li>
+</ul>
+
+<p>We are always ready to assist you with VPS and VPN setup!</p>
