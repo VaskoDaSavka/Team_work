@@ -1,7 +1,6 @@
 """
 This script runs the application using a development server.
 """
-
 import bottle
 import os
 import sys
@@ -24,15 +23,13 @@ if __name__ == '__main__':
     STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static').replace('\\', '/')
     HOST = os.environ.get('SERVER_HOST', 'localhost')
     try:
-        PORT = int(os.environ.get('SERVER_PORT', '5555'))
+        PORT = int(os.environ.get('SERVER_PORT', '60508'))
     except ValueError:
-        PORT = 5555
+        PORT = 60508
 
     @bottle.route('/static/<filepath:path>')
     def server_static(filepath):
-        """Handler for static files, used with the development server.
-        When running under a production server such as IIS or Apache,
-        the server should be configured to serve the static files."""
+        """Handler for static files, used with the development server."""
         return bottle.static_file(filepath, root=STATIC_ROOT)
 
     # Starts a local test server.
