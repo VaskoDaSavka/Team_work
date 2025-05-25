@@ -40,3 +40,52 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
     display: none;
 }
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 5px;
+    width: 200px;
+}
+
+button {
+    padding: 5px 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+    button:hover {
+        background: #0056b3;
+    }
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.form-users {
+    margin-top: 30%; 
+}
+
+.submit-add {
+    background-color: #8A2BE2;
+    color: white;
+}
+
+.submit-add:hover {
+    background-color: #5a0ea1;
+}

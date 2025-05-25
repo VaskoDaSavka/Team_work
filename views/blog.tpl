@@ -30,7 +30,7 @@
         </nav>
         <div class="content">
             <p class="text">We've gathered all the most important documents and materials to make it easier for you to get started with virtual servers.</p >
-            <a class="config_link" ="https://selectel.ru/blog/tutorials/how-to-set-up-vpn-ipsec/">How to configure IPsec VPN</a>
+            <a class="config_link" href="https://selectel.ru/blog/tutorials/how-to-set-up-vpn-ipsec/">How to configure IPsec VPN</a>
         </div>
 </div>
 
