@@ -19,6 +19,7 @@
     <Name>TeamWorkForLaba2_4</Name>
     <RootNamespace>TeamWorkForLaba2_4</RootNamespace>
     <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -62,6 +63,7 @@
     <Content Include="static\images\Vps1.png" />
     <Content Include="static\images\Vps2.png" />
     <Content Include="static\images\Vps3.png" />
+    <Content Include="static\news.json" />
     <Content Include="static\scripts\bootstrap.js" />
     <Content Include="static\scripts\bootstrap.min.js" />
     <Content Include="static\scripts\jquery-1.10.2.intellisense.js" />

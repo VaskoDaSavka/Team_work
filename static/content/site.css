@@ -49,9 +49,15 @@ hr {
 }
 
 .news-item {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
     transition: transform 0.2s;
 }
 
     .news-item:hover {
         transform: scale(1.02);
     }
+.news-form {
+    width: 600px;
+}
