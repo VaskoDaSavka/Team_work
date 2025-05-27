@@ -1,0 +1,181 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: url('../resources/Images/BackForSite.png') no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+body {
+    background: url('../resources/Images/BackForSite.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+.container.body-content {
+    flex-grow: 1;
+}
+
+.navbar, footer {
+    background-color: #2c3e50 !important;
+    color: white;
+}
+
+footer {
+    background-color: #2c3e50 !important;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+hr {
+    border-top: 1px solid #2c3e50 !important;
+}
+.jumbotron {
+    max-width: 90%;
+    margin: 20px auto 0 auto;
+    border-radius: 60px; /* Increased to 60px for consistency with .user-form */
+    text-align: center;
+    background: url('/static/images/back.png') no-repeat center center;
+    background-size: cover;
+    padding: 80px;
+    color: white;
+    border: 8px solid #8A2BE2;
+}
+
+.user-form {
+    margin: 40px auto;
+    max-width: 90%;
+    padding: 40px;
+    border: 3px solid #00BFFF;
+    border-radius: 60px; /* As per the first provided definition */
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.jumbotron .lead {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 60px; /* As provided */
+    margin-bottom: 20px;
+}
+
+.vps-logo {
+    margin-bottom: 20px; /* Add padding below the VPS logo */
+}
+.user-form {
+    margin: 40px auto;
+    max-width: 90%; /* Increased from 80% to 90% */
+    padding: 40px; /* Increased from 20px to 40px */
+    border: 3px solid #00BFFF;
+    border-radius: 60px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+    .jumbotron .lead {
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        font-weight: bold;
+        font-size: 22px;
+        background: rgba(0, 0, 0, 0.6);
+        display: inline-block;
+        padding: 15px 25px;
+        border-radius: 60px;
+        margin-bottom: 20px;
+    }
+
+.user-form {
+    margin: 40px auto;
+    max-width: 80%;
+    padding: 20px;
+    border: 3px solid #00BFFF;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+    .user-form h2 {
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        text-align: center;
+        color: black;
+        border-bottom: 2px solid #00BFFF;
+        padding-bottom: 10px;
+    }
+
+    .user-form .form-group {
+        margin-bottom: 15px;
+    }
+
+    .user-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        color: black;
+        font-size: 16px;
+    }
+
+    .user-form .form-control {
+        width: 100%;
+        border: 2px solid #8A2BE2;
+        border-radius: 5px;
+        padding: 10px;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        font-size: 14px;
+    }
+
+    .user-form textarea.form-control {
+        min-height: 100px;
+    }
+
+    .user-form .error, .user-form .client-error {
+        color: red;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .user-form .submit-btn {
+        background: transparent;
+        border: 2px solid #8A2BE2;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #8A2BE2;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        font-weight: bold;
+    }
+
+.user-list {
+    margin: 40px auto;
+    max-width: 80%;
+}
+
+    .user-list h2 {
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        text-align: center;
+        color: black;
+        border-bottom: 2px solid #00BFFF;
+        padding-bottom: 10px;
+    }
+
+.user-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    border-left: 4px solid #8A2BE2;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+    .user-item:hover {
+        background: #f5f5f5;
+    }
+
+    .user-item h3, .user-item p {
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        color: black;
+    }
