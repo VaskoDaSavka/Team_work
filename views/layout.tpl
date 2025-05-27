@@ -7,39 +7,14 @@
     
     <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
-    
+     <link rel="stylesheet" href="/static/content/style.css">
     <script src="/static/scripts/modernizr-2.6.2.js"></script>
     
     <style>
         html, body {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            background: url('static/images/BackForSite.png') no-repeat center center fixed;
-            background-size: cover;
-        }
-
-        .container.body-content {
-            flex-grow: 1;
-        }
-
-        .navbar, footer {
-            background-color: #2c3e50 !important; 
-            color: white;
-        }
-
-        footer {
-            background-color: #2c3e50 !important;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-            font-weight: bold;
-            margin-top: auto; 
-        }
-
-        hr {
-            border-top: 1px solid #2c3e50 !important;
+            
+            background: url('static/images/BackForSite.png') no-repeat center center fixed; 
+            background-size: cover;}
         }
     </style>
 </head>
@@ -53,18 +28,21 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/" class="navbar-brand" style="color: white;">VPS Market</a>
+                <a href="/" class="navbar-brand" style="color: pink;">Application name</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/home" style="color: white;">Home</a></li>
-                    <li><a href="/about" style="color: white;">About</a></li>
-                    <li><a href="/contact" style="color: white;">Contact</a></li>
-                    <li><a href="/news" style="color: white;">News</a></li>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/active_us">Active Users</a></li>
                 </ul>
             </div>
         </div>
     </div>
+</body>
+
 
     <div class="container body-content">
         {{!base}}

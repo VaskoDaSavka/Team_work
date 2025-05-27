@@ -19,7 +19,9 @@
     <Name>TeamWorkForLaba2_4</Name>
     <RootNamespace>TeamWorkForLaba2_4</RootNamespace>
     <InterpreterId>MSBuild|envas|$(MSBuildProjectFullPath)</InterpreterId>
-    <TestFramework>Pytest</TestFramework>
+    <TestFramework>unittest</TestFramework>
+    <UnitTestPattern>test*.py</UnitTestPattern>
+    <UnitTestRootDirectory>.\</UnitTestRootDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,14 +34,19 @@
   <ItemGroup>
     <Compile Include="app.py" />
     <Compile Include="routes.py" />
-    <Compile Include="test_news.py">
+    <Compile Include="act_us.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="views\active_users.py">
+    <Compile Include="tests\_init_.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test_active_users.py" />
+    <Compile Include="test_news.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="tests\" />
     <Folder Include="static\" />
     <Folder Include="static\content\" />
     <Folder Include="static\fonts\" />
@@ -52,6 +59,9 @@
     <Content Include="static\content\bootstrap.css" />
     <Content Include="static\content\bootstrap.min.css" />
     <Content Include="static\content\site.css" />
+    <Content Include="static\content\style.css">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="static\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="static\fonts\glyphicons-halflings-regular.ttf" />
@@ -65,6 +75,9 @@
     <Content Include="static\images\Vps1.png" />
     <Content Include="static\images\Vps2.png" />
     <Content Include="static\images\Vps3.png" />
+    <Content Include="static\scripts\active_users.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="static\scripts\bootstrap.js" />
     <Content Include="static\scripts\bootstrap.min.js" />
     <Content Include="static\scripts\jquery-1.10.2.intellisense.js" />
@@ -81,6 +94,9 @@
     <Content Include="static\scripts\respond.min.js" />
     <Content Include="static\scripts\_references.js" />
     <Content Include="views\about.tpl" />
+    <Content Include="views\active_us.tpl">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="views\api.tpl">
       <SubType>Code</SubType>
     </Content>
