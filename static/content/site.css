@@ -49,15 +49,10 @@ hr {
 }
 
 .news-item {
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
     transition: transform 0.2s;
 }
 
     .news-item:hover {
         transform: scale(1.02);
+        z-index: 1; /* ѕоднимает карточку над другими при наведении */
     }
-.news-form {
-    width: 600px;
-}
